@@ -10,17 +10,13 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class Cozinha {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	private String nome;
-
-	public Cozinha(Long id, String nome) {
-		this.id = id;
-		this.nome = nome;
-	}
-
 }

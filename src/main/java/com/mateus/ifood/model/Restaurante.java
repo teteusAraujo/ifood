@@ -13,6 +13,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class Restaurante {
 	@Id
@@ -24,16 +25,4 @@ public class Restaurante {
 	private Boolean aberto;
 	private Date dataCadastro;
 	private Date dataAtualização;
-
-	public Restaurante(Long id, String nome, BigDecimal taxaFrete, Boolean ativo, Boolean aberto, Date dataCadastro,
-			Date dataAtualização) {
-		this.id = id;
-		this.nome = nome;
-		this.taxaFrete = taxaFrete;
-		this.ativo = ativo;
-		this.aberto = aberto;
-		this.dataCadastro = dataCadastro;
-		this.dataAtualização = dataAtualização;
-	}
-
 }
